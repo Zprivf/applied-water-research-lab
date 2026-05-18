@@ -299,7 +299,13 @@ var NEWS = [
     authors: "Lee, Wonhyun",
     link:    "https://thehill.com/video/google-rolls-out-ai-tool-to-predict-flash-floods-up-to-24-hours-ahead/11739303/",   // replace with DOI or URL
   },
-
+  {
+    type:    "Publication",
+    journal: "Earth's Future",
+    title:   "Freshwater availability in the Mississippi River Basin and adjacent Texas aquifers under human and climate pressures",
+    authors: "Rateb, A., Scanlon, B. R., Pokhrel, Y., Shrestha, A., Jia, M., and Peng, B.,",
+    link:    "http://doi.org/10.1038/s43247-025-02149-9",
+  },
    {
     type:    "Website",
     journal: "State of Texas Rivers and Aquifers Water Storage (STRAWS)",
