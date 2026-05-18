@@ -100,7 +100,7 @@ var HERO_SKETCHES = [
   { src: "images/sketches/groundwater_model.png", label: "Groundwater Modelling"            },
   { src: "images/sketches/freshwater_tap.png",    label: "Water Availibility Modeling "              },
   { src: "images/sketches/texas_boundary.png",    label: "Extreme Events Analysis"             },
-  { src: "images/sketches/river_delta.png",       label: "River Delta Discharge"            },
+  { src: "images/sketches/river_delta.png",       label: "Coastal Studies"            },
 ];
 
 function renderHeroCarousel() {
