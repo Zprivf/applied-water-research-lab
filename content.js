@@ -143,7 +143,7 @@ var PEOPLE = [
     name:  "Ashraf Rateb",
     role:  "Research Assistant Professor",
     email: "ashraf.rateb@beg.utexas.edu",
-    bio:   "studies water: when it moves, where it gathers, and the dynamics that govern it. His tools are satellites, ground sensors, models, and probability",
+    bio:   "Studies water: when it moves, where it gathers, and the dynamics that govern it. His tools are satellites, ground sensors, models, and probability.",
     tags:  ["HydroGeodesy","Groundwater dynamics","Hydroclimate extremes","Terrestrial water storage","Probabilistic inference"],
     photo: "images/ARateb.jpg",
     links: [
