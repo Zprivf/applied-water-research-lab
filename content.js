@@ -189,6 +189,47 @@ var PEOPLE = [
       { label: "Google Scholar", url: "https://scholar.google.com/scholar?q=Yiming+Zhang+remote+sensing+hydrology+earth+engine", icon: "🎓" },
     ],
   },
+    {
+    name:  "Eminue, Mary",
+    role:  "Research Engineering/ Scientist Associate II",
+    email: "mary.eminue@beg.utexas.edu",
+    bio:   "My work involves analyzing water data to derive actionable insights and support decision-making on current water issues. I am interested in understanding water availability, hydro-climatologic extremes such as floods and droughts, and contributing to informed solutions for addressing climate and environmental impacts on water resources and natural systems.",
+    tags:  ["WAMS", "Hydrology", "GIS"],
+    photo: "images/Eminue-Mary_200x250.jpg",
+    links: [
+      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/mary-eminue", icon: "🎓" },
+    ],
+  },
+       {
+    name:  "Fleck, Preston",
+    role:  "RSA III",
+    email: "preston.fleck@beg.utexas.edu",
+    bio:   "",
+    tags:  ["WAMS", "Groundwater", "policy"],
+    photo: "images/preston_fleck200x250.jpg",
+    links: [
+      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/preston-fleck", icon: "🎓" },
+    ],
+  },
+        {
+    name:  "Ulatowski, Maria",
+    role:  "Postdoctoral Fellow",
+    email: "maria.ulatowski@beg.utexas.edu",
+    bio:   "",
+    tags:  ["Groundwater", "Hydrology", "GIS"],
+    
+   
+  },
+        {
+    name:  "Samadi, Aylar",
+    role:  "Research Engineering/ Scientist Associate III",
+    email: "aylar.samadi@beg.utexas.edu",
+    bio:   "My work involves analyzing water data to derive actionable insights and support decision-making on current water issues. I am interested in understanding water availability, hydro-climatologic extremes such as floods and droughts, and contributing to informed solutions for addressing climate and environmental impacts on water resources and natural systems.",
+    tags:  ["Drought", "ML", "flood"],
+    links: [
+      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/aylar-samadi", icon: "🎓" },
+    ],
+  },
  
 ];
 
