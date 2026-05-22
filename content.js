@@ -170,7 +170,7 @@ var PEOPLE = [
     name:  "Fitsume T. Wolkeba",
     role:  "Post Doctoral Researcher",
     email: "fitsume.wolkeba@beg.utexas.edu",
-    bio:   "Research interests include large scale hydrological modelling, remote sensing, machine learning, water security.",
+    bio:   "Leveraging big data and machine learning to advance large-scale hydrological and water availability modeling. Expert in bridging environmental remote sensing, data assimilation (integration), and numerical modeling to integrate satellite observations into advanced physical models and capture complex water cycle dynamics",
     tags:  ["GRACE", "Hybrid Modeling", "Water Security"],
     photo: "images/FWolkeba.jpg",
     links: [
