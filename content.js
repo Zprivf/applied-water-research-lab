@@ -224,7 +224,7 @@ var PEOPLE = [
     name:  "Samadi, Aylar",
     role:  "Research Engineering/ Scientist Associate III",
     email: "aylar.samadi@beg.utexas.edu",
-    bio:   "My work involves analyzing water data to derive actionable insights and support decision-making on current water issues. I am interested in understanding water availability, hydro-climatologic extremes such as floods and droughts, and contributing to informed solutions for addressing climate and environmental impacts on water resources and natural systems.",
+    bio:   "",
     tags:  ["Drought", "ML", "flood"],
     links: [
       { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/aylar-samadi", icon: "🎓" },
