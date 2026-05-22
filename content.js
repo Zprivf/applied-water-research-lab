@@ -182,7 +182,7 @@ var PEOPLE = [
     name:  "Yiming Zhang",
     role:  "Post Doctoral Researcher",
     email: "yiming.zhang@beg.utexas.edu",
-    bio:   "Remote sensing applications in hydrology using Google Earth Engine and Planet imagery.",
+    bio:   "Research interests include remote sensing and machine learning for water-related hazards, environmental change, infrastructure vulnerability, and community resilience.",
     tags:  ["Google Earth Engine", "Planet", "Remote Sensing"],
     photo: "images/yZhang.jpg",
     links: [
