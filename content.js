@@ -352,7 +352,6 @@ var NEWS = [
     authors: "BEG",
     link:    "https://www.beg.utexas.edu/publications/field-notes",   // replace with DOI or URL
   },
-
    {
     type:    "News Exposure",
     journal: "Assistant Professor Dr.Wonhyun talks about AI in flooding to the Hill",
