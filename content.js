@@ -349,7 +349,7 @@ var NEWS = [
     type:    "Bureau of Economic Geology Publication",
     journal: "Field Notes | Bureau of Economic Geology",
     title:   "The Team is featured in Field Notes | Bureau of Economic Geology",
-    authors: "The Team",
+    authors: "BEG",
     link:    "https://www.beg.utexas.edu/publications/field-notes",   // replace with DOI or URL
   },
 
