@@ -331,7 +331,27 @@ var ALUMNI = [
 // 6. NEWS & PUBLICATIONS
 // ─────────────────────────────────────────────────────────────
 var NEWS = [
-
+   {
+    type:    "Publication",
+    journal: "Earth’s Future",
+    title:   "Rapid Intensiﬁ cation and Relative Sea-Level Rise Amplify Compound Flooding from Hurricanes Harvey and Beryl",
+    authors: "o	Lee, W., Sun, A.Y. and Scanlon, B.R. ",
+    link:    "https://doi.org/10.1029/2025EF007678",   // replace with DOI or URL
+  },
+     {
+    type:    "Publication",
+    journal: "Environmental Modelling & Software",
+    title:   "PyFlood: Rapid high-resolution coastal flood mapping with digital elevation model, land cover and water level data",
+    authors: "o	Santos Cruz A, Lee J, Lee W. PyFlood",
+    link:    " https://www.sciencedirect.com/science/article/pii/S136481522600157X DOI: 10.1016/j.envsoft.2026.107010",   // replace with DOI or URL
+  },
+     {
+    type:    "Bureau of Economic Geology Publication",
+    journal: "Field Notes | Bureau of Economic Geology",
+    title:   "The Team is featured in Field Notes | Bureau of Economic Geology",
+    authors: "The Team",
+    link:    "https://www.beg.utexas.edu/publications/field-notes",   // replace with DOI or URL
+  },
 
    {
     type:    "News Exposure",
