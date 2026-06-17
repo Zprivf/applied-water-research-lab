@@ -622,19 +622,19 @@ var CONTACT = {
 // ─────────────────────────────────────────────────────────────
 var OPPORTUNITIES = [
   {
-    title: "Graduate Research Assistantships (GRA)",
-    desc: "We are seeking motivated Ph.D. and M.S. students interested in water resources sustainability, remote sensing (GRACE, satellite altimetry), and machine learning applications. Candidates should have a strong background in hydrology, geology, engineering, computer science, or related quantitative disciplines. Coding experience in Python, MATLAB, or R is highly desirable.",
-    contact: "Interested students should contact Dr. Bridget Scanlon with their CV and a brief statement of research interests."
+    title: "We will post opportunities here",
+    desc: "We will post opportunities here.",
+    contact: "We will post opportunities here."
   },
   {
-    title: "Postdoctoral Fellowships",
-    desc: "Opportunities are periodically available for postdoctoral scientists focusing on large-scale earth system modeling, coastal flood risk analysis, and groundwater dynamics. Postdoctoral fellows work closely with state agencies and federal partners to bridge the gap between academic research and actionable water management policy.",
-    contact: "Inquiries regarding available funding and openings should be sent directly to the Principal Investigator."
+    title: "We will post opportunities here",
+    desc: "We will post opportunities here.",
+    contact: "We will post opportunities here."
   },
   {
-    title: "Undergraduate Research Internships",
-    desc: "The Applied Water Research Lab provides hands-on research training for undergraduate students at UT Austin. Interns gain valuable experience in GIS data processing, database management, and geospatial analysis while working alongside our research staff.",
-    contact: "Interested students are encouraged to reach out with their academic transcripts and a brief cover letter."
+    title: "We will post opportunities here",
+    desc: "We will post opportunities here.",
+    contact: "We will post opportunities here."
   }
 ];
 
