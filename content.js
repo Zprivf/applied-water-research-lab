@@ -96,9 +96,9 @@ var HOME = {
 // ─────────────────────────────────────────────────────────────
 var FEATURE_TILES = [
   { label: "Water Resources", href: "research.html#area-01", color: "maroon" },
-  { label: "Hazards", href: "research.html#area-02", color: "orange" },
-  { label: "Coastal flooding", href: "research.html#area-03", color: "teal" },
-  { label: "Water Energy Nexus", href: "research.html#area-04", color: "purple" },
+  { label: "Water Energy Nexus", href: "research.html#area-04", color: "orange" },
+  { label: "Policy Support", href: "research.html#area-03", color: "teal" },
+  { label: "Hazards", href: "research.html#area-02", color: "purple" },
 ];
 
 // ─────────────────────────────────────────────────────────────
