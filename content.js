@@ -78,7 +78,7 @@ var NAV = [
 // 1c. HOME PAGE
 // ─────────────────────────────────────────────────────────────
 var HOME = {
-  subtitle: "Applied Water Research",
+  subtitle: "Applied Water Research Lab",
   mission_bullets: [
     "Helping provide solutions to critical water resource problems in Texas and globally.",
     "Distributing actionable data to local, state, and federal agencies, private entities, and communities.",
@@ -174,7 +174,7 @@ var ABOUT = {
       icon: "🌪️",
       color: "orange",
       desc: "Numerical modeling of storm surge and compound flooding to protect infrastructure and communities from extreme climate events along the Gulf Coast.",
-      bullets: ["Storm surge modeling", "Compound flooding analysis", "Infrastructure resilience", "Flooding", "Drought"]
+      bullets: ["Flooding", "Drought","Storm surge modeling","Compound flooding analysis","Infrastructure resilience"]
     }
   ],
   pillars: [
