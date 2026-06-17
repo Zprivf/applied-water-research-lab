@@ -282,6 +282,91 @@ var PEOPLE = [
       { label: "ResearchGate", url: "https://www.researchgate.net/profile/Justin_Thompson3", icon: "🔬" },
     ],
   },
+  
+   {
+    name: "Hassan Dashtian",
+    role: "Research Assistant Professor",
+    email: "hassan.dashtian@beg.utexas.edu",
+    bio: "Interests include water resource management and planning; a nexus of hydrology, policy, and economics, focused on relating groundwater management in Texas to hydro-economic impacts of pumping.",
+    tags: ["Soil Mositure", "Data Analytics"],
+    photo: "images/Hassan_Dashtian.jpg",
+    links: [
+      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/hassan-dashtian", icon: "🏛️" },
+      { label: "Google Scholar", url: "https://scholar.google.com/citations?user=Ik5Xt6wAAAAJ&hl=en", icon: "🎓" },
+      
+    ],
+  },
+     {
+    name: "Michael H. Young",
+    role: "Research Professor",
+    email: "michael.young@beg.utexas.edu",
+    bio: "Michael Young has over 35 years of professional experience, from academic research to Federal (regulatory) to private industry, in the general areas of environmental geosciences, hydrology, and soil sciences/physics. He has significant field, laboratory and numerical modeling experience that, taken together, provides a more comprehensive assessment of the processes affecting our environment. From 2010-2020, he was the associate director for environmental research at BEG, coordinating research across the Environment Division. Previously, he worked at the Desert Research Institute (DRI), Nevada, where he served as Acting Executive Director of the Division of Hydrologic Sciences and as Research Professor. He also has broad experience in teaching, student advising, and mentorship. His personal research directions are in vadose zone hydrology, soil science and ecohydrology. Michael has published extensively in the fields of water resources and soil science and is a former Editor for Vadose Zone Journal, a leading publication in unsaturated zone processes. Michael also sits on the Graduate Studies Committee in the Jackson School of Geosciences at UT Austin. He was recently elected as Fellow of the Geological Society of America and Soil Science Society of America..",
+    tags: ["Water/energy nexus", "Soil/water/plant interactions and solute transport in arid vadose zones", "Groundwater recharge", "Connections between water resources, landscape development, and human interactions"],
+    photo: "images/Michael Young.jpg",
+    links: [
+      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/michael-young", icon: "🏛️" },
+      { label: "ResearchID", url: "http://www.researcherid.com/rid/J-8009-2012", icon: "🔬" },
+    ],
+  },
+       {
+    name: "Brian Hunt",
+    role: "Research Scientist Associate V",
+    email: "brian.hunt@beg.utexas.edu",
+    bio: "Brian’s interests include geologic mapping and hydrogeology in central and west Texas. Brian makes detailed geologic maps and map databases for the Bureau since he joined the BEG in 2020. In addition, he has greater than 20 years of experience working on groundwater availability, sustainability, and aquifer management issues in central Texas. Those issues require the integration of a variety of methods and data such as geologic/structure mapping, stratigraphy, geochemistry, water levels, dye tracing, geophysics, flow measurements, aquifer testing, and analytical/numerical modeling.Brian is passionate about geology and hydrogeology and enjoys teaching students, leading field trips, and is a past president of the Austin Geological Society. He has over 100 published articles, maps, reports, and abstracts..",
+    tags: ["Geologic and structure mapping", "Aquifer characterization, groundwater availability, and sustainability"],
+    photo: "images/Hunt_portrait_2022_200x250.jpg",
+    links: [
+      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/brian-hunt", icon: "🏛️" },
+     
+    ],
+  },
+  
+         {
+    name: "Jeffrey G. Paine",
+    role: "Research Scientist Associate V",
+    email: "brian.hunt@beg.utexas.edu",
+    bio: "Jeff coordinates the Bureau's Near Surface Observatory and conducts coastal, geologic hazards, and near-surface geophysics projects at the Bureau. His principal research interest, geophysical applications in the shallow subsurface, combines an academic background in geophysics and extensive professional experience in coastal and near-surface strata. He specializes in applying borehole, surface, and airborne electromagnetic induction methods and seismic reflection and refraction methods to help solve geological, hydrological, environmental, and engineering problems.Jeff has served as principal investigator in more than 60 studies funded by State, Federal, and regional agencies and has published more than 180 articles, reports, and abstracts. He is a Fellow of the Geological Society of America, a past recipient of the Gold Award from the Environmental and Engineering Geophysical Society (EEGS) and a former president of EEGS and AAPG's Division of Environmental Geosciences..",
+    tags: ["Near-surface geophysics ", "Quaternary geology and geomorphology ","Coastal geology",
+	"Computer applications in the geological sciences"],
+    photo: "images/Jeff Paine.jpg",
+    links: [
+      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/jeff-paine", icon: "🏛️" },
+     
+    ],
+  },
+  
+           {
+    name: "Jeffrey G. Paine",
+    role: "Research Scientist Associate V",
+    email: "brian.hunt@beg.utexas.edu",
+    bio: "Jeff coordinates the Bureau's Near Surface Observatory and conducts coastal, geologic hazards, and near-surface geophysics projects at the Bureau. His principal research interest, geophysical applications in the shallow subsurface, combines an academic background in geophysics and extensive professional experience in coastal and near-surface strata. He specializes in applying borehole, surface, and airborne electromagnetic induction methods and seismic reflection and refraction methods to help solve geological, hydrological, environmental, and engineering problems.Jeff has served as principal investigator in more than 60 studies funded by State, Federal, and regional agencies and has published more than 180 articles, reports, and abstracts. He is a Fellow of the Geological Society of America, a past recipient of the Gold Award from the Environmental and Engineering Geophysical Society (EEGS) and a former president of EEGS and AAPG's Division of Environmental Geosciences..",
+    tags: ["Near-surface geophysics ", "Quaternary geology and geomorphology ","Coastal geology",
+	"Computer applications in the geological sciences"],
+    photo: "images/Jeff Paine.jpg",
+    links: [
+      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/jeff-paine", icon: "🏛️" },
+     
+    ],
+  },
+  
+  
+           {
+    name: "Jon Paul Pierre",
+    role: "Lead, Texas Soil Observation Network",
+    email: "jonpaul.pierre@beg.utexas.edu",
+    bio: "Lead, Texas Soil Observation Network.",
+    tags: ["Advancing soil moisture monitoring and mesonet systems to improve natural resource management, conservation planning, and climate modeling capabilities  ", 
+	"Mapping, quantifying, and forecasting land use associated with anthropogenic systems","Altered land reclamation and ecosystem restoration",
+	"Groundwater and surface water characterization and interaction"],
+    photo: "images/Jon Paul Pierre.jpg",
+    links: [
+      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/jonpaul-pierre", icon: "🏛️" },
+     
+    ],
+  },
+  
+  
+  
   {
     name: "Fitsume T. Wolkeba",
     role: "Post Doctoral Researcher",
