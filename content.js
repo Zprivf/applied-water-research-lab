@@ -63,8 +63,9 @@ var NAV = [
     href: "database.html",
     page: "database",
     subsections: [
-      { label: "Our Data", href: "database.html#our-data" },
-      { label: "Useful Data Links", href: "database.html#useful-links" }
+      { label: "Dashboards", href: "database.html#our-data" },
+	  { label: "Datasets", href: "database.html#our-data" },
+      { label: "Softwares", href: "database.html#useful-links" }
     ]
   },
   { label: "Publications", href: "publications.html", page: "publications" },
