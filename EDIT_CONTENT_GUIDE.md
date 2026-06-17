@@ -1,4 +1,4 @@
-# UT Hydro Analytics Website — Content Editing Guide
+# Applied Water Research Lab — Content Editing Guide
 
 All website text, people profiles, news items, and contact details
 are controlled by a **single file**: `content.js`
@@ -11,11 +11,16 @@ No HTML or CSS knowledge is required.
 ## File Structure Overview
 
 ```
-website/
-├── index.html          ← Page structure (rarely needs editing)
-├── style.css           ← Visual design (colors, fonts, layout)
+├── index.html          ← Home page
+├── people.html         ← Staff directory
+├── alumni.html         ← Previous members
+├── research.html       ← Research areas + gallery
+├── news.html           ← Full news archive
+├── contact.html        ← Contact information
+├── style.css           ← Visual design (GCCC-style theme)
 ├── content.js          ← ✅ EDIT THIS FILE for all content changes
-├── main.js             ← Renders content.js into the page
+├── layout.js           ← Shared header/footer (rarely needs editing)
+├── main.js             ← Renders content.js into each page
 └── EDIT_CONTENT_GUIDE.md  ← This guide
 ```
 
@@ -24,135 +29,180 @@ website/
 ## 1. Update Site Title / Institution
 
 ```js
-const SITE_META = {
-  title:       "UT Hydro Analytics Research Group",   // ← change title
-  institution: "Bureau of Economic Geology · ...",    // ← change institution line
+var SITE_META = {
+  title:       "Applied Water Research Lab",
+  institution: "Bureau of Economic Geology · ...",
 };
 ```
 
 ---
 
-## 2. Update Hero Section
+## 2. Navigation
+
+Edit the `NAV` array to change menu links:
 
 ```js
-const HERO = {
-  eyebrow:     "Bureau of Economic Geology · ...",   // small text above title
-  title_line1: "HYDRO ANALYTICS",                    // large glitch title
-  title_line2: "RESEARCH GROUP",                     // subtitle line
-  description: "Solving the world's ...",            // paragraph below title
-  stats: [
-    { number: "7+", label: "Researchers" },          // ← edit numbers/labels
-    { number: "3",  label: "Publications Featured" },
-    { number: "∞",  label: "Impact" },
+var NAV = [
+  { label: "Home", href: "index.html", page: "home" },
+  // ...
+];
+```
+
+---
+
+## 3. Home Page
+
+```js
+var HOME = {
+  subtitle: "Research, Technology, and Analytics for Water Resource Sustainability",
+  mission_bullets: [
+    "First bullet...",
+    "Second bullet...",
+    "Third bullet...",
   ],
+  featured_image: "images/gallery/STRAWS.jpg",
+  featured_caption: "Caption for the featured image.",
+  news_archive_link: { label: "Click here to view all news.", href: "news.html" },
 };
 ```
 
 ---
 
-## 3. Update About Section
-
-Edit the `paragraphs` array — each string is one paragraph:
+## 4. Feature Tiles (Homepage Quick Links)
 
 ```js
-const ABOUT = {
+var FEATURE_TILES = [
+  { label: "Water Resource Sustainability", href: "research.html#area-01", color: "maroon" },
+  { label: "STRAWS Dashboard", href: "https://...", external: true, color: "teal" },
+];
+```
+
+Colors: `"maroon"`, `"orange"`, `"teal"`, or `"purple"`.
+
+---
+
+## 5. Sidebar Promos (Homepage)
+
+```js
+var SIDEBAR_PROMOS = [
+  {
+    title: "Click here for the STRAWS Dashboard...",
+    href: "https://txwater.beg.utexas.edu/straws/",
+    image: "images/gallery/STRAWS.jpg",
+  },
+];
+```
+
+---
+
+## 6. Update About Section
+
+Edit the `paragraphs` array — each string is one paragraph (HTML allowed):
+
+```js
+var ABOUT = {
   paragraphs: [
     `First paragraph text here...`,
     `Second paragraph text here...`,
-    `Third paragraph text here...`,
-  ],
-  pillars: [
-    { icon: "🛰️", label: "Remote Sensing" },   // ← change emoji and label
-    { icon: "🌊", label: "Coastal Flooding" },
-    // add or remove pillars as needed
   ],
 };
 ```
 
 ---
 
-## 4. Update Research Focus Areas
-
-Each card has a number, title, and description:
+## 7. Update Research Focus Areas
 
 ```js
-const RESEARCH_AREAS = [
+var RESEARCH_AREAS = [
   {
     number: "01",
     title:  "Water Resource Sustainability",
     desc:   "Description text here...",
   },
-  // Add more objects to add more cards
-  // Remove objects to remove cards
 ];
 ```
 
 ---
 
-## 5. Add / Edit / Remove Team Members
-
-Each person is an object in the `PEOPLE` array:
+## 8. Add / Edit / Remove Team Members
 
 ```js
-const PEOPLE = [
+var PEOPLE = [
   {
     name:  "Bridget Scanlon",
     role:  "Research Professor",
     email: "bridget.scanlon@beg.utexas.edu",
-    bio:   "This program addresses sustainability of water resources using remote sensing, global and regional models, and ground-based monitoring data. Much of our research focuses on impacts of climate extremes including floods and droughts, land use, and water use on water resources. Approaches used include GRACE satellite data, altimetry, global and regional models, and groundwater level monitoring. Topics include assessing impacts of climate and humans on water resources in major aquifers and river basins globally. Field studies include evaluation of groundwater recharge, monitoring equal hydrologic n and processes affecting nutrients, particularly nitrate.",
-    tags:  ["Tag1", "Tag2", "Tag3"],   // research keywords shown as chips
-    photo: "iBrS.jpg",  // ← uncomment and add photo path
+    bio:   "Bio text here...",
+    tags:  ["Tag1", "Tag2"],
+    photo: "images/BrS.jpg",
+    links: [
+      { label: "BEG Profile", url: "https://...", icon: "🏛️" },
+    ],
   },
-  // ... more people
 ];
 ```
 
-### To add a photo:
-1. Place the image file in `website/images/` (create the folder if needed)
-2. Add `photo: "images/filename.jpg"` to the person object
-3. Recommended size: 200×200 px, square crop
-
-### To remove a person:
-Delete their entire `{ ... }` block from the array.
-
-### To reorder people:
-Cut and paste the `{ ... }` blocks into the desired order.
-
 ---
 
-## 6. Add / Edit News & Publications
+## 9. Add / Edit News & Publications
 
 ```js
-const NEWS = [
+var NEWS = [
   {
-    type:    "Publication",          // "Publication" | "Conference" | "Media"
+    date:    "June 2026",           // optional — shown in GCCC-style news list
+    type:    "Publication",
     journal: "Nature Scientific Reports",
     title:   "Paper title here",
-    authors: "Author1, Author2, & Author3",
-    desc:    "Optional extra description...",   // can be omitted
-    link:    "https://doi.org/...",             // set to "#" to hide link
+    authors: "Author1, Author2",
+    desc:    "Optional extra description...",
+    link:    "https://doi.org/...",
   },
-  // ... more items
 ];
 ```
 
-Badge colors are automatic:
-- `"Publication"` → cyan badge
-- `"Conference"`  → purple badge
-- `"Media"`       → blue badge
-
 ---
 
-## 7. Update Contact Details
+## 10. Update Contact Details
 
 ```js
-const CONTACT = {
-  institution: "Bureau of Economic Geology<br/>...",  // <br/> = line break
+var CONTACT = {
+  institution: "Bureau of Economic Geology<br/>...",
   pi_email:    "bridget.scanlon@beg.utexas.edu",
-  podcast:     "The Water Resources Podcast — hosted by Dr. Bridget Scanlon",
+  podcast:     "The Water Resources Podcast — ...",
+  link:        "https://wrp.beg.utexas.edu/",
   location:    "Austin, Texas, USA",
 };
 ```
+
+---
+
+## 11. Home Gallery (Research Page)
+
+```js
+var GALLERY = [
+  {
+    src:     "images/gallery/my_photo.jpg",
+    caption: "Short title",
+    desc:    "Longer description.",
+    link:    "https://...",
+  },
+];
+```
+
+---
+
+## Quick Checklist
+
+| Task | File | What to edit |
+|------|------|--------------|
+| Change a person's bio | content.js | `PEOPLE[n].bio` |
+| Add a new team member | content.js | Add object to `PEOPLE` |
+| Add a publication | content.js | Add object to `NEWS` |
+| Change home subtitle | content.js | `HOME.subtitle` |
+| Change feature tile | content.js | `FEATURE_TILES` |
+| Change sidebar promo | content.js | `SIDEBAR_PROMOS` |
+| Change contact email | content.js | `CONTACT.pi_email` |
+| Change nav link | content.js | `NAV` |
 
 ---
 
@@ -162,60 +212,12 @@ Open `style.css` and edit the `:root` block at the top:
 
 ```css
 :root {
-  --accent:   #00d4ff;   /* main cyan highlight color */
-  --accent2:  #0077ff;   /* blue accent */
-  --accent3:  #7b2fff;   /* purple accent */
-  --bg:       #020b18;   /* page background */
-  --text:     #e0f0ff;   /* main text color */
+  --logo-red: #cc0000;
+  --nav-link: #337ab7;
+  --accent: #bf5700;
+  --tile-maroon: #8b0000;
+  --tile-orange: #e67e22;
+  --tile-teal: #008080;
+  --tile-purple: #8e44ad;
 }
-```
-
----
-
-## Quick Checklist for Common Updates
-
-| Task                        | File        | What to edit              |
-|-----------------------------|-------------|---------------------------|
-| Change a person's bio       | content.js  | `PEOPLE[n].bio`           |
-| Add a new team member       | content.js  | Add object to `PEOPLE`    |
-| Add a publication           | content.js  | Add object to `NEWS`      |
-| Change hero description     | content.js  | `HERO.description`        |
-| Update stat numbers         | content.js  | `HERO.stats`              |
-| Change contact email        | content.js  | `CONTACT.pi_email`        |
-| Change accent color         | style.css   | `--accent` in `:root`     |
-| Add a photo to a person     | content.js  | `photo: "images/x.jpg"`   |
-
-
----
-
-## 8. Home Gallery (Images & GIFs)
-
-Add or remove media items in the `GALLERY` array in `content.js`:
-
-```js
-var GALLERY = [
-  {
-    src:     "images/gallery/my_photo.jpg",  // path or full URL
-    type:    "image",                         // "image" or "gif"
-    caption: "Short title",
-    desc:    "Longer description shown below the caption.",
-  },
-  {
-    src:     "images/gallery/animation.gif",
-    type:    "gif",                           // shows a GIF badge on the card
-    caption: "My Animation",
-    desc:    "Description of what the GIF shows.",
-  },
-];
-```
-
-- Drop files into `website/images/gallery/`
-- Recommended size: 800×500 px
-- Click any card to open the full lightbox viewer
-- Use arrow keys or the ← → buttons to navigate in the lightbox
-- Press Escape to close the lightbox
-
-### To use an external image URL:
-```js
-src: "https://example.com/path/to/image.jpg",
 ```

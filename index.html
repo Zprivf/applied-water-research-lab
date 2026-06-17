@@ -1,203 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Applied Water Research Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Applied Water Research Lab</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    /* Ensure website always fits screen */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .home-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .home-main {
+      flex: 2 1 600px;
+    }
+
+    .home-sidebar {
+      flex: 1 1 300px;
+    }
+
+    /* Inline Search Styling */
+    .search-section-inline {
+      width: 100%;
+      background: #f4f7fa;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin: 2rem 0;
+    }
+  </style>
 </head>
-<body>
 
-  <!-- ── PARTICLE CANVAS ── -->
-  <canvas id="particles"></canvas>
+<body data-page="home">
 
-  <!-- ── NAV ── -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <div class="nav-logo">
-        <!-- BEG Logo from gallery -->
-        <img src="images/gallery/BEG UTA logo.JPG" alt="Bureau of Economic Geology · UT Austin" class="ut-logo"/>
-        <div class="nav-logo-text">
-          <span class="logo-accent">UT</span> APPLIED WATER RESEARCH LAB
-          <span class="nav-logo-sub">Bureau of Economic Geology · UT Austin</span>
-        </div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#people">People</a></li>
-        <li><a href="#alumni">Alumni</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle">&#9776;</button>
-    </div>
-  </nav>
+  <div id="site-header"></div>
 
-  <!-- ── HERO ── -->
-  <section class="hero" id="home">
-
-    <!-- ── HERO DECORATIVE (injected by hero-deco.js) ── -->
-    <div class="hero-deco" id="heroDeco" aria-hidden="true"></div>
-
-    <!-- Hero layout: center content only, no side columns -->
-    <div class="hero-layout">
-      <div class="hero-col hero-col-center">
-        <p class="hero-eyebrow">Bureau of Economic Geology · Jackson School of Geosciences · UT Austin</p>
-        <h1 class="hero-title">
-          <span class="glitch" data-text="APPLIED WATER RESEARCH LAB">APPLIED WATER RESEARCH LAB</span>
-        </h1>
-        <p class="hero-desc">
-          Solving the world's most pressing water challenges through remote sensing,
-          earth system modeling, machine learning, and data analytics.
-        </p>
-        <div class="hero-cta">
-          <a href="#research" class="btn-primary">Explore Research</a>
-          <a href="#people" class="btn-outline">Meet the Team</a>
-        </div>
-      </div>
-    </div><!-- end .hero-layout -->
-
-    <!-- ── SKETCH CAROUSEL — slides at bottom of hero ── -->
-    <div class="hero-carousel" id="heroCarousel" aria-label="Research themes">
-      <div class="hc-track" id="hcTrack"></div>
+  <main class="page-content">
+    <div class="home-grid">
+      <div class="home-main" id="homeMain"></div>
+      <aside class="home-sidebar" id="homeSidebar"></aside>
     </div>
 
-    <div class="scroll-hint">&#8595; SCROLL</div>
-  </section>
+    <section id="inlineSearch" class="search-section-inline"></section>
 
-  <!-- ── ORANGE STRIPE ZONE: Gallery → News ── -->
-  <div id="stripe-zone">
+    <section class="feature-tiles" id="featureTiles" aria-label="Quick links"></section>
 
-  <!-- ── HOME MEDIA GALLERY ── -->
-  <section class="section section-gallery" id="gallery">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// GALLERY</span>
-        <h2 class="section-title">Research in Action</h2>
-      </div>
-      <!-- injected by main.js from content.js GALLERY -->
-      <div class="gallery-grid" id="galleryGrid"></div>
-    </div>
-  </section>
+    <section class="news-section">
+      <h2>Recent News</h2>
+      <div id="recentNews"></div>
+    </section>
+  </main>
 
-  <!-- ── ABOUT ── -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// ABOUT</span>
-        <h2 class="section-title">Who We Are</h2>
-      </div>
-      <div class="about-grid">
-        <!-- injected by main.js from content.js ABOUT.paragraphs -->
-        <div class="about-text" id="aboutText"></div>
-        <!-- injected by main.js from content.js ABOUT.pillars -->
-        <div class="about-pillars" id="aboutPillars"></div>
-      </div>
-    </div>
-  </section>
+  <button id="backToTop" class="back-to-top" title="Go to top">↑</button>
 
-  <!-- ── RESEARCH ── -->
-  <section class="section section-dark" id="research">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// RESEARCH</span>
-        <h2 class="section-title">Focus Areas</h2>
-      </div>
-      <!-- injected by main.js from content.js RESEARCH_AREAS -->
-      <div class="research-grid" id="researchGrid"></div>
-      <div class="research-cta">
-        <a href="#news" class="btn-primary">View All Publications &amp; News →</a>
-      </div>
-    </div>
-  </section>
+  <div id="site-footer"></div>
 
-  <!-- ── PEOPLE ── -->
-  <section class="section" id="people">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// PEOPLE</span>
-        <h2 class="section-title">The Team</h2>
-      </div>
-      <div class="people-grid" id="peopleGrid"></div>
-    </div>
-  </section>
-
-  <!-- ── ALUMNI ── -->
-  <section class="section section-dark" id="alumni">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// ALUMNI</span>
-        <h2 class="section-title">Previous Members</h2>
-      </div>
-      <div class="alumni-grid" id="alumniGrid"></div>
-    </div>
-  </section>
-
-  <!-- ── NEWS ── -->
-  <section class="section section-dark" id="news">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// NEWS</span>
-        <h2 class="section-title">Latest Publications &amp; News</h2>
-      </div>
-      <!-- injected by main.js from content.js NEWS -->
-      <div class="news-list" id="newsList"></div>
-    </div>
-  </section>
-
-  </div><!-- end #stripe-zone -->
-
-  <!-- ── CONTACT ── -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// CONTACT</span>
-        <h2 class="section-title">Get In Touch</h2>
-      </div>
-      <div class="contact-grid">
-        <!-- injected by main.js from content.js CONTACT -->
-        <div class="contact-info" id="contactInfo"></div>
-        <div class="contact-map-placeholder">
-          <div class="map-box">
-            <span>📍</span>
-            <p id="mapLocation">Austin, Texas, USA</p>
-            <small>University of Texas at Austin</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── FOOTER ── -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-logo"><span class="logo-accent">UT</span> APPLIED WATER RESEARCH LAB</div>
-      <p class="footer-copy">© 2024 Applied Water Research Lab · Bureau of Economic Geology · UT Austin</p>
-      <p class="footer-edit">To update content, edit <code>content.js</code></p>
-    </div>
-  </footer>
-
-  <!-- ── LIGHTBOX ── -->
-  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
-    <button class="lb-close" onclick="closeLightbox()" aria-label="Close">&#10005;</button>
-    <button class="lb-nav lb-prev" onclick="lbNav(-1)" aria-label="Previous">&#8592;</button>
-    <button class="lb-nav lb-next" onclick="lbNav(1)"  aria-label="Next">&#8594;</button>
-    <div class="lb-content">
-      <img id="lb-img" src="" alt="" />
-      <div class="lb-text">
-        <div id="lb-caption" class="lb-caption"></div>
-        <p id="lb-desc" class="lb-desc"></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- content.js MUST load before main.js -->
   <script src="content.js"></script>
-  <script src="hero-deco.js"></script>
+  <script src="layout.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
