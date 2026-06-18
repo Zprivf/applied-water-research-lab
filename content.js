@@ -243,6 +243,18 @@ var PEOPLE = [
       { label: "ResearchGate", url: "https://www.researchgate.net/profile/Bridget-Scanlon", icon: "🔬" },
     ],
   },
+     {
+    name: "Michael H. Young",
+    role: "Research Professor",
+    email: "michael.young@beg.utexas.edu",
+    bio: "Michael Young has over 35 years of professional experience, from academic research to Federal (regulatory) to private industry, in the general areas of environmental geosciences, hydrology, and soil sciences/physics. He has significant field, laboratory and numerical modeling experience that, taken together, provides a more comprehensive assessment of the processes affecting our environment. From 2010-2020, he was the associate director for environmental research at BEG, coordinating research across the Environment Division. Previously, he worked at the Desert Research Institute (DRI), Nevada, where he served as Acting Executive Director of the Division of Hydrologic Sciences and as Research Professor. He also has broad experience in teaching, student advising, and mentorship. His personal research directions are in vadose zone hydrology, soil science and ecohydrology. Michael has published extensively in the fields of water resources and soil science and is a former Editor for Vadose Zone Journal, a leading publication in unsaturated zone processes. Michael also sits on the Graduate Studies Committee in the Jackson School of Geosciences at UT Austin. He was recently elected as Fellow of the Geological Society of America and Soil Science Society of America..",
+    tags: ["Water/energy nexus", "Soil/water/plant interactions and solute transport in arid vadose zones", "Groundwater recharge", "Connections between water resources, landscape development, and human interactions"],
+    photo: "images/Michael Young.jpg",
+    links: [
+      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/michael-young", icon: "🏛️" },
+      { label: "ResearchID", url: "http://www.researcherid.com/rid/J-8009-2012", icon: "🔬" },
+    ],
+  },
   {
     name: "Wonhyun Lee",
     role: "Research Assistant Professor",
@@ -297,18 +309,7 @@ var PEOPLE = [
       
     ],
   },
-     {
-    name: "Michael H. Young",
-    role: "Research Professor",
-    email: "michael.young@beg.utexas.edu",
-    bio: "Michael Young has over 35 years of professional experience, from academic research to Federal (regulatory) to private industry, in the general areas of environmental geosciences, hydrology, and soil sciences/physics. He has significant field, laboratory and numerical modeling experience that, taken together, provides a more comprehensive assessment of the processes affecting our environment. From 2010-2020, he was the associate director for environmental research at BEG, coordinating research across the Environment Division. Previously, he worked at the Desert Research Institute (DRI), Nevada, where he served as Acting Executive Director of the Division of Hydrologic Sciences and as Research Professor. He also has broad experience in teaching, student advising, and mentorship. His personal research directions are in vadose zone hydrology, soil science and ecohydrology. Michael has published extensively in the fields of water resources and soil science and is a former Editor for Vadose Zone Journal, a leading publication in unsaturated zone processes. Michael also sits on the Graduate Studies Committee in the Jackson School of Geosciences at UT Austin. He was recently elected as Fellow of the Geological Society of America and Soil Science Society of America..",
-    tags: ["Water/energy nexus", "Soil/water/plant interactions and solute transport in arid vadose zones", "Groundwater recharge", "Connections between water resources, landscape development, and human interactions"],
-    photo: "images/Michael Young.jpg",
-    links: [
-      { label: "BEG Profile", url: "https://www.beg.utexas.edu/people/michael-young", icon: "🏛️" },
-      { label: "ResearchID", url: "http://www.researcherid.com/rid/J-8009-2012", icon: "🔬" },
-    ],
-  },
+  
        {
     name: "Brian Hunt",
     role: "Research Scientist Associate V",
