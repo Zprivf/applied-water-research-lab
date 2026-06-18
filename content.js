@@ -324,8 +324,8 @@ var PEOPLE = [
   
          {
     name: "Jeffrey G. Paine",
-    role: "Research Scientist Associate V",
-    email: "brian.hunt@beg.utexas.edu",
+    role: "Research Professor",
+    email: "jeff.paine@beg.utexas.edu",
     bio: "Jeff coordinates the Bureau's Near Surface Observatory and conducts coastal, geologic hazards, and near-surface geophysics projects at the Bureau. His principal research interest, geophysical applications in the shallow subsurface, combines an academic background in geophysics and extensive professional experience in coastal and near-surface strata. He specializes in applying borehole, surface, and airborne electromagnetic induction methods and seismic reflection and refraction methods to help solve geological, hydrological, environmental, and engineering problems.Jeff has served as principal investigator in more than 60 studies funded by State, Federal, and regional agencies and has published more than 180 articles, reports, and abstracts. He is a Fellow of the Geological Society of America, a past recipient of the Gold Award from the Environmental and Engineering Geophysical Society (EEGS) and a former president of EEGS and AAPG's Division of Environmental Geosciences..",
     tags: ["Near-surface geophysics ", "Quaternary geology and geomorphology ","Coastal geology",
 	"Computer applications in the geological sciences"],
@@ -338,7 +338,7 @@ var PEOPLE = [
   
            {
     name: "Jean-Philippe Nicot",
-    role: "Research Scientist Associate V",
+    role: "Research Professor",
     email: "jp.nicot@beg.utexas.edu",
     bio: "Numerical modeling of multiphase flow and contaminant transport in both the unsaturated and saturated zones.",
     tags: ["Numerical modeling of multiphase flow and contaminant transport in both the unsaturated and saturated zones", "Geochemical modeling and reactive transport ","Water resources management",
