@@ -357,7 +357,7 @@ var PEOPLE = [
     role: "Lead, Texas Soil Observation Network",
     email: "jonpaul.pierre@beg.utexas.edu",
     bio: "Lead, Texas Soil Observation Network.",
-    tags: ["Advancing soil moisture monitoring and mesonet systems to improve natural resource management, conservation planning, and climate modeling capabilities  ", 
+    tags: ["Advancing soil moisture monitoring and mesonet systems to improve natural resource management, conservation planning, and climate modeling capabilities  ",
 	"Mapping, quantifying, and forecasting land use associated with anthropogenic systems","Altered land reclamation and ecosystem restoration",
 	"Groundwater and surface water characterization and interaction"],
     photo: "images/Jon Paul Pierre.jpg",

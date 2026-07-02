@@ -25,7 +25,7 @@ function renderNewsEntry(n, i) {
     : "";
   return `
     <div class="news-entry">
-      <span class="news-date">${date}:</span> ${summary}${linkHtml}
+      ${summary}${linkHtml}
     </div>`;
 }
 
@@ -196,7 +196,7 @@ function renderPeople() {
 
   el.innerHTML = `<div class="staff-list">${PEOPLE.map(p => {
     const photo = p.photo
-      ? `<img class="staff-photo" src="${p.photo}" alt="${p.name}" loading="lazy"/>`
+      ? `<img class="staff-photo" src="${p.photo.replace(/ /g, '%20')}" alt="${p.name}" loading="lazy"/>`
       : `<div class="staff-photo-placeholder">${getInitials(p.name)}</div>`;
     const links = (p.links && p.links.length)
       ? `<div class="staff-links">${p.links.map(l =>
