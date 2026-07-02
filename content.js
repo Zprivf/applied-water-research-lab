@@ -21,7 +21,7 @@
 // ─────────────────────────────────────────────────────────────
 var SITE_META = {
   title: "Applied Water Research Lab",
-  institution: "Bureau of Economic Geology · Jackson School of Geosciences · UT Austin",
+  institution: "Bureau of Economic Geology · Jackson School of Geosciences · UT Austin ",
   favicon: "",   // path to favicon if desired
 };
 
