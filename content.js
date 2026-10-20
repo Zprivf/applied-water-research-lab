@@ -536,6 +536,13 @@ var ALUMNI = [
 var NEWS = [
   {
     type: "Publication",
+    journal: "International Journal of Coal Science & Technology",
+    title: "Rare earth element potential in coal and coal ash in the U.S. Gulf Coast",
+    authors: "Bridget R Scanlon, Robert C Reedy, Brent A Elliott, James C Hower, J Richard Kyle, Marek Locmelis, Nolan Theaker, Peter D Warwick",
+    link: "https://link.springer.com/article/10.1007/s40789-026-00872-y",   // replace with DOI or URL
+  },
+  {
+    type: "Publication",
     journal: "Environmental Research: Water",
     title: "Dynamic Integration of Grace-Based Water Storage into Global Hydrological Models Using Machine Learning",
     authors: "Fitsume T. Wolkeba, Mesfin Mekonnen, Hamid Moradkhani, Mukesh Kumar",
