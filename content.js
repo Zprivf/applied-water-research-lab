@@ -536,6 +536,13 @@ var ALUMNI = [
 var NEWS = [
   {
     type: "Publication",
+    journal: "Environmental Research: Water",
+    title: "Dynamic Integration of Grace-Based Water Storage into Global Hydrological Models Using Machine Learning",
+    authors: "Fitsume T. Wolkeba, Mesfin Mekonnen, Hamid Moradkhani, Mukesh Kumar",
+    link: "https://doi.org/0.1088/3033-4942/aea63c",   // replace with DOI or URL
+  },
+  {
+    type: "Publication",
     journal: "Earth’s Future",
     title: "Rapid Intensiﬁ cation and Relative Sea-Level Rise Amplify Compound Flooding from Hurricanes Harvey and Beryl",
     authors: "Lee, W., Sun, A.Y. and Scanlon, B.R.",
